@@ -10,3 +10,11 @@ jobs:
       - name: Hello world
         run: |
           echo "Hello world ${{ vars.WORLDMSG }}"
+          
+  hello-world-qa:
+    environment: qa
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: |
+          echo "Hello world ${{ vars.WORLDMSG }}"
